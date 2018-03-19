@@ -1,0 +1,43 @@
+@import "../wxParse/wxParse.wxss";
+.Journalism_title {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.Journalism_time {
+    font-size: 12px;
+    color: #b8b8b8;
+}
+
+.detalis {
+    width: 100%;
+}
+
+.img {
+    border-radius: 10px;
+    display: block;
+    width: 80%;
+		margin-left:10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.detalis_desc {
+    text-indent: 20px;
+    font-size: 12px;
+    color: #b8b8b8;
+    line-height: 20px;
+}
+
+.Journalism {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wxParse-img{
+	width:100%!important;
+	margin:0 auto;
+	float: left;
+}

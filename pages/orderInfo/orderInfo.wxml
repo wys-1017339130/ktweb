@@ -1,0 +1,24 @@
+<import src="../wxParse/wxParse.wxml" />
+<!-- <view class="wxParse">
+
+    <template is="wxParse" data="{{wxParseData:images.nodes}}" />
+
+</view> -->
+
+<view>
+  <view class='Cantop'>
+    <image src='../images/logo.png'></image>
+  </view>
+  <view class='detalis'>
+    <view class='detalisTitle'>{{name}}</view>
+    <view></view>
+    <view class='detalis_name'>
+      <view class='two'>{{ctitle}}</view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+  </view>
+</view>

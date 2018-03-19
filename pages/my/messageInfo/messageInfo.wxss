@@ -1,0 +1,53 @@
+/* pages/messageInfo/messageInfo.wxss */
+
+page{
+  position: absolute;
+  height:100%;
+  background: #F4F5F7;
+}
+.mess_name{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  font-size: 30rpx;
+  margin-top:20rpx;
+  padding-bottom: 1rem;
+}
+
+.content_box{
+  margin-top: 0.5rem;
+  background: white;
+  border-radius: 0.3rem;
+  padding-top:1rem;
+}
+.content_box image:first-child{
+  width:3rem;
+  height:3rem;
+  border-radius: 50%;
+  display: block;
+  margin:0 auto;
+}
+.input_box{
+  font-size: 32rpx;
+  border-top:1px solid #ccc;
+  padding:0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.input_box input{
+  padding-left:0.5rem;
+  text-align: right;
+}
+.radio_box{
+  display: flex;
+  align-items: center;
+}
+.radio{
+  font-size:32rpx;
+}
+.title_box{
+  display: block;
+  padding:0.3rem;
+  border-bottom:1px solid #ccc;
+}

@@ -1,0 +1,252 @@
+/* pages/home/home.wxss */
+.nav {
+    height: 70px;
+    color: #000;
+     font-size: 28rpx;
+    display: -webkit-box;
+    -webkit-box-align: center;
+}
+
+.nav .iconfont{
+   font-size: 50rpx;
+}
+
+.nav>.navtor {
+    -webkit-box-flex: 1;
+    text-align: center;
+    color: #616161;
+}
+
+.navtor>view:last-child {
+    font-size: 28rpx;
+}
+/* 案例作品列表开始 */
+.Title {
+     font-size: 28rpx;
+    font-weight: bold;
+    margin-left: 3%;
+    padding-left: 5px;
+    margin-right: 3%;
+    border-left: 2px solid;
+    height: 14px;
+    margin-top: 5px;
+    line-height: 14px;
+    color: #4b4b4b;
+}
+.more_list{
+  padding:20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.moreInfo{
+  width:330rpx;
+  height:400rpx;
+  margin-top:20rpx;
+}
+.imgbox image{
+  width:100%;
+  border-top-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+}
+
+.Offspring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.Offspring>view {
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+     font-size: 32rpx;
+}
+
+.heis {
+    height: 30px;
+    font-size:26rpx !important;
+    line-height: 30px;
+}
+
+.See {
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 28rpx;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 40%;
+		margin-top:10px;
+}
+
+.myNew {
+		display: flex;
+	align-items: center;
+    display: -webkit-box;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f9f9f9;
+}
+
+.newImage {
+    width: 110px;
+    height: 90px;
+		margin-top:5px;
+    /* background-color: #b4f5a4; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.newDetails {
+    -webkit-box-flex: 1;
+    padding-left: 5px;
+}
+
+.newTitle {
+    width: 100%;
+     font-size: 28rpx;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+}
+
+.decs {
+     font-size: 24rpx;
+    color: #8a8a8a;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.time {
+    color: #8a8a8a;
+     font-size: 24rpx;
+    margin-top: 10px;
+}
+
+.newHome {
+     padding: 10px 15px 0 15px; 
+}
+
+.Amapr {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 150px;
+}
+
+.contactTitle {
+     font-size: 28rpx;
+    padding:20rpx 3%;
+}
+
+.contacts {
+    display: -webkit-box;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: #aeaeae;
+     font-size: 28rpx;
+}
+
+.contacts>view {
+    -webkit-box-flex: 1;
+    height: 25px;
+    line-height: 25px;
+}
+
+.newContact {
+    margin-bottom: 40px;
+}
+
+.More {
+    width:78%;
+    height: 300rpx;
+    padding-left: 7%;
+    padding-right: 15%;
+    position: relative;
+}
+
+.images {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 165px;
+    width: 100%;
+    /* filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius=100, MakeShadow=false); *//* 　　-webkit-filter: blur(100px); *//* 　　-moz-filter: blur(100px); *//* 　　-ms-filter: blur(100px); */
+    filter: blur(4px);
+}
+
+.More2 {
+    position: absolute;
+    top: 10px;
+		left:20px;
+    z-index: 100;
+    color: #fff;
+}
+
+.more_Title>view:first-child {
+     font-size: 32rpx;
+}
+
+.more_Title>view:last-child {
+     font-size: 20rpx;
+}
+
+.more_desc {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+     font-size: 24rpx;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width:78%;
+}
+
+.more_input {
+    width: 80px;
+     font-size: 28rpx;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.bg-box{
+  width:100%;
+  height:400rpx;
+  background-image: url('http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E5%9B%BE%E7%89%87&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&cs=594559231,2167829292&os=2394225117,7942915&simid=3436308227,304878115&pn=3&rn=1&di=113546291430&ln=1923&fr=&fmq=1505092343454_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fimg.taopic.com%2Fuploads%2Fallimg%2F120727%2F201995-120HG1030762.jpg&rpstart=0&rpnum=0&adpicid=0');
+  background-size: cover;
+  
+}

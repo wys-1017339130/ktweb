@@ -1,0 +1,101 @@
+/* pages/cardInfo/cardInfo.wxss */
+
+.top_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.top_box image {
+  display: block;
+  width: 50%;
+  margin-left: 25%;
+  height: 3rem;
+}
+
+.content_box {
+  margin-top: 0.5rem;
+  background: white;
+  border-radius: 0.3rem;
+}
+
+.content_box image:first-child {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.input_box {
+  font-size: 30rpx;
+  border-bottom: 1px solid #ccc;
+  padding: 0.3rem 0;
+}
+
+.input_box input {
+  padding: 0.5rem;
+}
+
+.input_flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input_flexbox button {
+  font-size: 30rpx;
+  background: #505050;
+  color: white;
+}
+
+/*上传图片盒子*/
+
+.upImgbox {
+  margin-top: 0.3rem;
+  width: 3rem;
+  height: 3rem;
+  border: 2px dashed #ccc;
+  font-size: 50rpx;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  border-radius: 0.3rem;
+}
+
+/* 图片列表 */
+.imglist_box{
+  display: flex;
+}
+.img_box{
+  position: relative;
+}
+.img_box .del_box{
+  position: absolute;
+  right:-10rpx;
+  top:10rpx;
+  width:40rpx;
+  height:40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  color:red;
+  background: #ccc;
+  font-size: 30rpx;
+  border-radius: 50%;
+}
+
+.btn_box {
+  width: 90%;
+  margin: 0 auto;
+  background: #505050;
+  font-size: 40rpx;
+  margin-top: 2rem;
+  color:white;
+}
+
+
+.button-hover {
+  background-color: red;
+}

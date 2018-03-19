@@ -1,0 +1,54 @@
+<view>
+  <view class="hasCard" style="">
+    <view class="" style="position:relative">
+      <!-- 背景图 -->
+      <image src="../images/6.png" class="cover_Bc"></image>
+      <!-- 信息 -->
+      <view class="message_box">
+        <!-- 头像+名字 -->
+        <view class="message_top_box">
+          <image src="{{head}}"></image>
+          <view class="name_box">
+            <text>{{cardInfo.username}}</text>
+            <text>{{cardInfo.post}}</text>
+          </view>
+        </view>
+        <!-- 电话公司邮箱 -->
+        <view class="" style="font-size:28rpx;">
+          <view class="messageInfo_box">
+            <text>电话</text>
+            <text>{{cardInfo.tel}}</text>
+          </view>
+          <view class="messageInfo_box">
+            <text>公司</text>
+            <text>{{cardInfo.corporate_name}}</text>
+          </view>
+          <view class="messageInfo_box">
+            <text>邮箱</text>
+            <text>{{cardInfo.email}}</text>
+          </view>
+        </view>
+        <!-- 电话公司邮箱结束 -->
+      </view>
+      <!-- 信息结束 -->
+    </view>
+    <view class='ordermenu'>
+      <view class='order-list'>
+        <span class="iconfont {{nav==1?'icon-renqipaiming':'icon-renqipaiming'}}"></span>
+        <text>人气:{{read_num}}</text>
+      </view>
+      <view class='order-list' bindtap="Fabulous_add">
+         <span class="iconfont {{zandata ? 'icon-dianzan':' icon-dianzan1'}}"></span> 
+        <text>点赞:{{zanNum == -1 ? 0 : zanNum }}</text>
+      </view>
+      <view class='order-list' bindtap="keep_add">
+        <span class="iconfont {{cangData? 'icon-shoucang1':' icon-shoucang'}}"></span>
+        <text>收藏:{{cangNum == -1 ? 0: cangNum }}</text>
+      </view>
+    </view>
+  </view>
+  <!-- <button class="btn_box" bingtap="shareCard"
+   style="background:#505050;color:white;margin-top:2rem;" bindtap="shareCard">{{sendHolder}}</button> -->
+  <button class="btn_box" bindtap="addPhoneContact" style="background:#505050;color:white;margin-top:2rem;">保存到手机通讯录</button>
+  <button class="btn_box" bindtap="myCards">打开我的名片</button>
+</view>

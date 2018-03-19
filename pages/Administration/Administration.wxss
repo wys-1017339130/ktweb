@@ -1,0 +1,148 @@
+/* Administration.wxss */.Cantop {
+    width: 100%;
+    height: 45px;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.Cantop>image {
+    width: 96px;
+    height: 30px;
+}
+
+.swiperBox image{
+  width:100%;
+}
+
+/* tab效果 */
+/* tabdemo.wxss */
+.navbar {
+  background-color: RGB(247, 247, 247);
+  width: 100%
+}
+.nav-1{  
+  flex: none;  
+  display: flex;   
+  background: #fff;  
+  background-color: RGB(247, 247, 247);
+  height: 80rpx;
+}
+.nav-1 .wrapBar {
+  display: flex;
+}
+.nav-1 .item{  
+  position: relative;   
+  text-align: center;  
+  font-size: 30rpx;
+  line-height: 80rpx;  
+  color: gray;
+  display: inline-block;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}  
+.nav-1 .item.active{  
+  color: black;
+}  
+.nav-1 .item.active:after{  
+  content: "";  
+  display: block; 
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0; 
+  height: 4rpx;  
+  background: black;  
+}  
+
+.more_list{
+  padding:20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.moreInfo{
+  width:330rpx;
+  height:400rpx;
+  margin-top:20rpx;
+}
+.imgbox image{
+  width:100%;
+  border-top-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+}
+
+.nav-1-left {
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 0 0 100%;
+}
+
+swiper-item scroll-view {
+  display: inline;
+}
+swiper.itemContainer{
+  min-height: 600rpx;
+}
+
+
+.SignIn {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.Sign_title {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+     font-size: 40rpx;
+    font-weight: 500;
+}
+
+.Password, .user {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: -webkit-box;
+}
+
+.Password>input, .user>input {
+    height: 35px;
+    -webkit-box-flex: 1;
+     font-size: 28rpx;
+    text-indent: 5px;
+    border: 1px solid #f0f0f0;
+    padding-left: 10rpx;
+}
+
+.Password>view, .user>view {
+    width: 37px;
+    height: 37px;
+    background-color: #aaacab;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40rpx;
+    color:white;
+}
+
+.Sign {
+    width: 100%;
+    display: -webkit-box;
+    height: 35px;
+    background-color: #464646;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 35px;
+     font-size: 28rpx;
+    font-weight: 500;
+}
+
+.Sign>view {
+    width: 30px;
+}

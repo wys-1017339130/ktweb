@@ -1,0 +1,33 @@
+<!--pages/my/my.wxml-->
+<view class='message_box' bindtap="getMessageInfo">
+  <image src="{{headimgurl}}" background-size="cover"></image>
+  <text class='message_name'>{{userInfo.nickname}}</text>
+  <view class="iconfont icon-zuo icon"></view>
+</view>
+<view class="bolck-box"></view>
+<view class='message_box2' bindtap="getMessageSync">
+  <span class="iconfont icon-ziyuan13 icon_left"></span>
+  <text class='message_name2'>同步信息</text>
+</view>
+<view class="bolck-box"></view>
+<view class='message_box2' bindtap="backHome">
+  <span class="iconfont icon-ziyuan18 icon_left"></span>
+  <text class='message_name2'>官方网站</text>
+  <!-- <span class="iconfont icon-ziyuan18 icon-box"></span> -->
+</view>
+<view class='message_box2' bindtap="openCallus">
+  <view class="iconfont icon-xia icon_left"></view>
+  <text class='message_name2'>联系我们</text>
+</view>
+<view class="bolck-box"></view>
+<view class='message_box2' bindtap="mycardListshow">
+  <span class="iconfont icon-ziyuan6 icon_left"></span>
+  <text class='message_name2'>我的名片</text>
+  <view class="iconfont icon {{listShow === true ? 'icon-xia' : 'icon-shang-copy'  }}"></view>
+</view>
+<view class='ordermenu' wx:if="{{listShow}}">
+  <view class='order-list' wx:for="{{list}}" data-id="{{index}}" bindtap="openPage">
+    <span class="{{item.icon}}"></span>
+    <text>{{item.title}}</text>
+  </view>
+</view>

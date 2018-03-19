@@ -1,0 +1,30 @@
+<!--callUs.wxml-->
+<view class='Cantop'>
+  <image src='../../images/logo.png'></image>
+</view>
+<swiper indicator-dots='true' indicator-color='rgba(255,255,255,1)' indicator-active-color='#505655' interval='{{interval}}' duration="{{duration}}" circular='true' autoplay="{{autoplay}}">
+  <swiper-item>
+    <image class="slide-image" style="width:100%;" src="../../images/us-1.png" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="slide-image" style="width:100%;" src="../../images/6.png" mode="widthFix"></image>
+  </swiper-item>
+</swiper>
+<view class='contact'>
+  <view class='Title'>联系我们</view>
+      <view class='Amapr'>
+     <map id="map" longitude="117.1051" latitude="39.06953" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}"  style="width: 100%;"></map>
+    </view>
+  <view class='newContact'>
+    <view class='contactTitle'>天津凯拓软件</view>
+      <view class='contacts'>
+        <view>{{address}}</view>
+      </view>
+      <view class='contacts'>
+        <view>{{email}}</view>
+      </view>
+      <view class='contacts' bind:tap='phoneNumber'>
+        <view>{{tel}}</view>
+      </view>
+  </view>
+</view>

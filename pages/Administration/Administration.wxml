@@ -1,0 +1,137 @@
+<view>
+  <view class='Cantop'>
+    <image src='../images/logo.png'></image>
+  </view>
+  <swiper class="swiperBox">
+    <swiper-item>
+      <image class="slide-image" src="../images/20160829065248278.png"  mode="widthFix"></image>
+    </swiper-item>
+    <!-- <swiper-item>
+      <image class="slide-image" src="../images/20160829065248278.png"  mode="widthFix"></image>
+    </swiper-item> -->
+  </swiper>
+  <view class="">
+    <view class="navbar">
+      <view class="nav-1">
+        <scroll-view scroll-x="true" class="nav-1-left" scroll-left="{{scrollLeftValue}}">
+          <view wx:for="{{categories}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</view>
+        </scroll-view>
+      </view>
+    </view>
+    <swiper class="itemContainer" bindchange="swiperChange" current="{{currentTab}}">
+      <swiper-item>
+       <view class='SignIn'>
+          <view class='Sign_title'>员工验证</view>
+          <view class='user'>
+            <view class="iconfont icon-ziyuan9"></view>
+            <input placeholder='用户名' type='text'></input>
+          </view>
+          <view class='Password'>
+            <view class="iconfont icon-suozi"></view>
+            <input placeholder='密码' type='text' password="true" maxlength="{{maxlength}}"></input>
+          </view>
+          <view class='Sign'>登
+            <view></view>录</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='SignIn'>
+          <view class='Sign_title'>员工验证</view>
+          <view class='user'>
+            <view class="iconfont icon-ziyuan9"></view>
+            <input placeholder='用户名' type='text'></input>
+          </view>
+          <view class='Password'>
+            <view class="iconfont icon-suozi"></view>
+            <input placeholder='密码' type='text' password="true" maxlength="{{maxlength}}"></input>
+          </view>
+          <view class='Sign'>登
+            <view></view>录</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='SignIn'>
+          <view class='Sign_title'>员工验证</view>
+          <view class='user'>
+            <view class="iconfont icon-ziyuan9"></view>
+            <input placeholder='用户名' type='text'></input>
+          </view>
+          <view class='Password'>
+            <view class="iconfont icon-suozi"></view>
+            <input placeholder='密码' type='text' password="true" maxlength="{{maxlength}}"></input>
+          </view>
+          <view class='Sign'>登
+            <view></view>录</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='SignIn'>
+          <view class='Sign_title'>员工验证</view>
+          <view class='user'>
+            <view class="iconfont icon-ziyuan9"></view>
+            <input placeholder='用户名' type='text'></input>
+          </view>
+          <view class='Password'>
+            <view class="iconfont icon-suozi"></view>
+            <input placeholder='密码' type='text' password="true" maxlength="{{maxlength}}"></input>
+          </view>
+          <view class='Sign'>登
+            <view></view>录</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='SignIn'>
+          <view class='Sign_title'>员工验证</view>
+          <view class='user'>
+            <view class="iconfont icon-ziyuan9"></view>
+            <input placeholder='用户名' type='text'></input>
+          </view>
+          <view class='Password'>
+            <view class="iconfont icon-suozi"></view>
+            <input placeholder='密码' type='text' password="true" maxlength="{{maxlength}}"></input>
+          </view>
+          <view class='Sign'>登
+            <view></view>录</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='SignIn'>
+          <view class='Sign_title'>员工验证</view>
+          <view class='user'>
+            <view class="iconfont icon-ziyuan9"></view>
+            <input placeholder='用户名' type='text'></input>
+          </view>
+          <view class='Password'>
+            <view class="iconfont icon-suozi"></view>
+            <input placeholder='密码' type='text' password="true" maxlength="{{maxlength}}"></input>
+          </view>
+          <view class='Sign'>登
+            <view></view>录</view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

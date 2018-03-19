@@ -1,0 +1,18 @@
+<import src="../wxParse/wxParse.wxml" />
+<view>
+    <view class='Cantop'>
+        <image src='../images/logo.png'></image>
+    </view>
+    <view class='Journalism'>
+        <view class='Journalism_title'>{{title}}</view>
+        <view class='Journalism_time'>{{addtime}}</view>
+        <view class='detalis'>
+            <image class='img' mode='{{mode}}' src="{{src}}"></image>
+            <view class='detalis_desc'>
+                <view class="wxParse">
+                    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

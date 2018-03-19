@@ -1,0 +1,108 @@
+/* about.wxss */
+.Cantop {
+    width: 100%;
+    height: 45px;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.Cantop>image {
+    width: 96px;
+    height: 30px;
+}
+
+.metamorphosis {
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom: 12px solid #f4f5f7;
+}
+
+.title {
+    width: 100%;
+		padding: 20px 0;
+}
+
+.title>view:first-child {
+     font-size: 28rpx;
+     font-weight: 600;
+    color: #202020;
+}
+
+.title>view:last-child {
+     font-size: 20rpx;
+    color: #666;
+}
+
+.title>view {
+    text-align: center;
+}
+
+.desc {
+     font-size: 28rpx;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #6c6c6c;
+}
+
+.images {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.Amapr {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 150px;
+}
+
+.contactTitle {
+     font-size: 28rpx;
+    padding-left: 3%;
+}
+
+.Title {
+     font-size: 28rpx;
+    font-weight: bold;
+    margin-left: 3%;
+    padding-left: 5px;
+    margin-right: 3%;
+    border-left: 2px solid;
+    height: 14px;
+    margin-top: 5px;
+    line-height: 14px;
+    color: #4b4b4b;
+}
+
+.Title + view {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 10px;
+}
+
+.contacts {
+    display: -webkit-box;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: #aeaeae;
+    font-size: 28rpx;
+}
+
+.contacts>view {
+    -webkit-box-flex: 1;
+    height: 25px;
+    line-height: 25px;
+}
+
+.newContact {
+    margin-bottom: 40px;
+}

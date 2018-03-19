@@ -1,0 +1,27 @@
+<import src="../wxParse/wxParse.wxml" />
+<!-- <view class="wxParse">
+
+    <template is="wxParse" data="{{wxParseData:images.nodes}}" />
+
+</view> -->
+
+<view>
+  <view class='Cantop'>
+    <image src='../images/logo.png'></image>
+  </view>
+  <view class='detalis'>
+    <view class='detalisTitle'>案例展示</view>
+    <view></view>
+    <view class='detalis_name'>
+      <view class='one'>{{title}}</view>
+      <view class='two'>{{ctitle}}</view>
+      <view class='Development'>{{keywords}}</view>
+    </view>
+  </view>
+  <view class='img'>
+    <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <!-- <image mode="{{mode}}" style='width:100%;display:bock;' src="{{images}}"></image> -->
+  </view>
+</view>

@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/order/order",
+    "pages/my/my",
+    "pages/mycard/mycard",
+    "pages/Youcard/Youcard",
+    "pages/Administration/Administration",
+    "pages/my/zan/zan",
+    "pages/my/see/see",
+    "pages/my/messageInfo/messageInfo",
+    "pages/my/callUs/callUs",
+    "pages/work/work",
+    "pages/trends/trends",
+   "pages/about/about",
+    "pages/my/Collection/Collection",
+    "pages/caseDetalis/caseDetalis",
+    "pages/JournalismDetalis/JournalismDetalis",
+    "pages/mycard/cardInfo/cardInfo",
+    "pages/orderInfo/orderInfo"
+  ],
+  "tabBar": {
+    "selectedColor": "#000",
+    "color": "#ccc",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "pages/images/index.png",
+        "selectedIconPath": "pages/images/indexA.png"
+      },
+      {
+        "text": "业务范围",
+        "pagePath": "pages/order/order",
+        "iconPath": "pages/images/order.png",
+        "selectedIconPath": "pages/images/orderA.png"
+      },
+      {
+        "text": "我的名片",
+        "pagePath": "pages/mycard/mycard",
+        "iconPath": "pages/images/card.png",
+        "selectedIconPath": "pages/images/cardA.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/my/my",
+        "iconPath": "pages/images/my.png",
+        "selectedIconPath": "pages/images/myA.png"
+      }
+    ]
+  },
+  "window": {
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  }
+}

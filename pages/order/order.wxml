@@ -1,0 +1,139 @@
+<import src="../wxParse/wxParse.wxml" />
+<!--pages/order/order.wxml-->
+<view class='Cantop'>
+    <image src='../images/logo.png'></image>
+</view>
+<view>
+    <swiper indicator-dots="true" indicator-color="rgba(255, 255, 255, .5)" ndicator-active-color="red" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item style="width:200px;">
+                <image src="{{item}}" class="slide-image" style='width:100%'  mode="widthFix"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <!--水平滚动-->
+    <scroll-view scroll-x="true" scroll-left="{{left}}" style=" white-space: nowrap; display: flex;width:100%;overflow-x:scroll;">
+        <!--  display: inline-block-->
+        <view style="display: inline-block;" wx:for="{{meunlist}}" wx:for-index="index">
+            <view style="font-size:30rpx;background: #F7F7F7;color:#AEAEAE;height:30px;line-height:30px;padding:0.5rem 0.3rem" 
+            class="{{currentTab==index?'active-tag':''}}" data-id="{{index}}" id="{{item.id}}" bindtap="tagChoose">{{item.name}}</view>
+        </view>
+    </scroll-view>
+
+    <!-- 横排tab对应子页面 -->
+    <swiper current="{{currentTab}}" duration="300" bindchange="scroll" style="height:500rpx;">
+        <!-- APP全方位定制开发 -->
+        <swiper-item wx:for="{{meunlist}}">
+            <view style="margin:0.5rem;border-radius:0.3rem;height:240px;">
+                <view class="showbox">
+                    <image src="{{img}}" class='imgbox'></image>
+                    <view class="cover-box">
+                        <text class="title">{{name}}</text>
+                        <text class="title-little">{{ctitle}}</text>
+                        <view class="content">
+                            <view class="wxParse" style='overflow:hidden'>
+                                <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+                            </view>
+                        </view>
+                        <button type="default" size="mini" plain="true"
+                         hover-class="button-hover" style="border:1px solid white;color:white;margin-top:10px;margin-left:5px;" bindtap='currentlist'> 了解更多</button>
+                    </view>
+                </view>
+            </view>
+        </swiper-item>
+<!-- 
+        <!-- 微信公众号方案 -->
+        <!-- <swiper-item>
+            <view style="margin:0.5rem;border-radius:0.3rem;height:600rpx;">
+                <view class="showbox">
+                    <image src="{{img}}" class='imgbox'></image>
+                    <view class="cover-box">
+                        <text class="title">{{name}}</text>
+                        <text class="title-little">{{ctitle}}</text>
+                        <view class="content">
+                            <view class="wxParse">
+                                <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+                            </view>
+                        </view>
+                        <button type="default" size="mini" plain="true" hover-class="button-hover" style="border:1px solid white;color:white;margin-top:10px;margin-left:5px;" bindtap='currentlist'> 了解更多</button>
+                    </view>
+                </view>
+            </view>
+        </swiper-item> -->
+
+        <!-- 网站,手机定制开发 -->
+        <!-- <swiper-item>
+            <view style="margin:0.5rem;border-radius:0.3rem;height:600rpx;">
+                <view class="showbox">
+                   <image src="{{img}}" class='imgbox'></image>
+                    <view class="cover-box">
+                        <text class="title">{{name}}</text>
+                        <text class="title-little">{{ctitle}}</text>
+                        <view class="content">
+                            <view class="wxParse">
+                                <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+                            </view>
+                        </view>
+                        <button type="default" size="mini" plain="true" hover-class="button-hover" style="border:1px solid white;color:white;margin-top:10px;margin-left:5px;" bindtap='currentlist'> 了解更多</button>
+                    </view>
+                </view>
+            </view>
+        </swiper-item> -->
+
+        <!-- 电商平台 -->
+        <!-- <swiper-item>
+            <view style="margin:0.5rem;border-radius:0.3rem;height:600rpx;">
+                <view class="showbox">
+                    <image src="{{img}}" class='imgbox'></image>
+                    <view class="cover-box">
+                        <text class="title">{{name}}</text>
+                        <text class="title-little">{{ctitle}} </text>
+                        <view class="content">
+                            <view class="wxParse">
+                                <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+                            </view>
+                        </view>
+                        <button type="default" size="mini" plain="true" hover-class="button-hover" style="border:1px solid white;color:white;margin-top:10px;margin-left:5px;" bindtap='currentlist'> 了解更多</button>
+                    </view>
+                </view>
+            </view>
+        </swiper-item> -->
+        <!-- 视觉 -->
+        <!-- <swiper-item>
+            <view style="margin:0.5rem;border-radius:0.3rem;height:600rpx;">
+                <view class="showbox">
+                    <image src="{{img}}" class='imgbox'></image>
+                    <view class="cover-box">
+                        <text class="title">{{name}}</text>
+                        <text class="title-little">{{ctitle}}</text>
+                       <view class="content">
+                            <view class="wxParse">
+                                <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+                            </view>
+                        </view>
+                        <button type="default" size="mini" plain="true" hover-class="button-hover" style="border:1px solid white;color:white;margin-top:10px;margin-left:5px;" bindtap='currentlist'> 了解更多</button>
+                    </view>
+                </view>
+            </view>
+        </swiper-item> -->
+				<!-- 智能硬件 -->
+				 <!-- <swiper-item>
+            <view style="margin:0.5rem;border-radius:0.3rem;height:600rpx;">
+                <view class="showbox">
+                    <image src="{{img}}" class='imgbox'></image>
+                    <view class="cover-box">
+                        <text class="title">{{name}}</text>
+                        <text class="title-little">{{ctitle}}</text>
+                       <view class="content">
+                            <view class="wxParse">
+                                <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+                            </view>
+                        </view>
+                        <button type="default" size="mini" plain="true" hover-class="button-hover" style="border:1px solid white;color:white;margin-top:10px;margin-left:5px;" bindtap='currentlist'> 了解更多</button>
+                    </view>
+                </view>
+            </view>
+        </swiper-item>  -->
+    </swiper>
+
+</view>

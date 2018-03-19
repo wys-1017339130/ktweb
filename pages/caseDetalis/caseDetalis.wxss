@@ -1,0 +1,62 @@
+@import "../wxParse/wxParse";
+.Cantop {
+    width: 100%;
+    height: 45px;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.Cantop>image{
+  width: 96px;
+  height: 30px;
+}
+
+.detalisTitle{
+  font-weight: 600;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.detalisTitle+view{
+  width: 95px;
+  height: 0.5px;
+  background-color: #000;
+}
+
+.detalis{
+  padding-left: 4%;
+  margin-top: 10px;
+}
+
+
+.one{
+  font-size: 15px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.Development,.two{
+  font-size: 10px;
+   height:18px;
+  line-height: 18px;
+}
+
+.detalis_name{
+  color: #656565;
+}
+
+.img{
+  padding: 10%;
+}
+
+.img>image{
+  box-shadow: 8px 8px 8px #656565
+}
+
+.wxParse image{
+  max-width: 100%;
+  padding: 0px;
+}

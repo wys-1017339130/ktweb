@@ -1,0 +1,15 @@
+<!--see.wxml-->
+
+<view class="see_box" wx:if="{{cardlistShow}}">
+  <view class="iconfont icon-ziyuan14"></view>
+  <text>暂无消息</text>
+</view>
+
+<!-- 有收藏时 -->
+<view class="list" wx:if="{{!cardlistShow}}">
+  <view class="list_item" wx:for="{{cardList}}">
+    <image src="{{item.w_face}}" class="cardimg" background-size="cover"></image>
+    <text class="cardname">{{item.username}}</text>
+    <!-- <view class="iconfont icon-dadianhua" style="color:#1afa29"></view> -->
+  </view>
+</view>

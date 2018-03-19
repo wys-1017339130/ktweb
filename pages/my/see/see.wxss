@@ -1,0 +1,41 @@
+/* see.wxss */
+
+
+.see_box{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.see_box>view{
+  margin-top:20rpx;
+  font-size: 200rpx;
+  color:#ccc;
+}
+.see_box>text{
+  color:#ccc;
+  margin-top:20rpx;
+}
+.list{
+  padding:20rpx;
+}
+.list_item{
+  display: flex;
+  padding:10rpx 0;
+  align-items: center;
+  border-bottom:1px solid #ccc;
+}
+
+.list_item .cardimg{
+  width:3rem;
+  height:3rem;
+  border-radius: 10rpx;
+}
+
+.cardname{
+  font-size: 30rpx;
+  margin-left:40rpx;
+  flex-shrink: 0;
+  width:65%;
+}

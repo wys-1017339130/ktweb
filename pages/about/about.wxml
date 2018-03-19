@@ -1,0 +1,65 @@
+<view>
+    <view class='Cantop'>
+    <image src='../images/logo.png'></image>
+    </view>
+    <view class="img_box">
+      <image src="../images/us-1.png" mode='{{mode}}' style="width:100%;"></image>
+    </view>
+    <view class='metamorphosis'>
+        <view>
+            <view class='title'>
+                <view>{{ArticleContent.corporate_culture}}</view>
+                <view>{{ArticleContent.corporate_ename}}</view>
+            </view>
+            <view class="text">
+                <view class='desc'>
+               {{ArticleContent.corporate_content}}
+                </view>
+                <image class='images' mode='{{mode}}' src='{{corporate_pic}}'></image>
+            </view>
+        </view>
+        <view>
+            <view class='title'>
+                <view>{{ArticleContent.company_profile}}</view>
+                <view>{{ArticleContent.company_ename}}</view>
+            </view>
+            <view class="text">
+                <view class='desc'>
+                {{ArticleContent.company_content}}
+                </view>
+                <!-- <image class='images'  mode='{{mode}}' src='../images/22-1.png'></image> -->
+            </view>
+        </view>
+
+        <view>
+            <view class='title'>
+                <view>{{ArticleContent.team_presence}}</view>
+                <view>{{ArticleContent.team_ename}}</view>
+            </view>
+            <view class="text">
+                <view class='desc'>
+                {{ArticleContent.team_content}}
+                </view>
+                <image class='images'  mode='{{mode}}' src='{{team_pic}}'></image>
+            </view>
+        </view>
+    </view>
+    <view class='contact'>
+        <view class='Title'>联系我们</view>
+        <view class='Amapr'>
+     			<map id="map" longitude="117.1051" latitude="39.06953" scale="14" controls="{{controls}}" 				bindcontroltap="controltap" markers="{{markers}}"  style="width: 100%;"></map>
+ 			  </view>
+       <view class='newContact'>
+      <view class='contactTitle'>天津凯拓软件</view>
+      <view class='contacts'>
+        <view>{{address}}</view>
+      </view>
+      <view class='contacts'>
+        <view>{{email}}</view>
+      </view>
+      <view class='contacts' bind:tap='phoneNumber'>
+        <view>{{tel}}</view>
+      </view>
+    </view>
+    </view>
+</view>

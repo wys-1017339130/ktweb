@@ -1,0 +1,76 @@
+<!--pages/home/home.wxml-->
+<!--index.wxml-->
+<view class="container">
+  <view class='Cantop'>
+    <image src="../images/logo.png"></image>
+  </view>
+  <swiper indicator-dots='true' indicator-color='rgba(255,255,255,1)' indicator-active-color='#505655' interval='{{interval}}' duration="{{duration}}" circular='true' autoplay="{{autoplay}}">
+    <swiper-item wx:for='{{imgArray}}'>
+      <image class="slide-image" style="width:100%;" src="{{item}}" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+  <view class='nav'>
+    <view wx:for="{{navList}}" wx:key='' wx:for-index="index" data-nav-index='{{index}}' class='navtor' bind:tap="navList">
+      <view class='iconfont {{item.columnimg}}'></view>
+      <view>{{item.name}}</view>
+    </view>
+  </view>
+  <view class='More'>
+    <image class='images' bind:load="imageLoad" src="../images/6.png" mode="widthFix"></image>
+    <view class='More2'>
+      <view class='more_Title'>
+        <view>关于我们</view>
+        <view>ABOUT KAITUO</view>
+      </view>
+      <view class='more_desc'>天津凯拓软件是一家软件开发、电商运营、智能硬件研发为主要业务的互联网科技公司。在"互联网+"整体平台的大量市场需求下,凯拓软件拥有着全市一流的技术团队,服务于各个领域、行业的客户百余家</view>
+      <view class='more_input' bindtap="openAbout">了解更多</view>
+    </view>
+  </view>
+  <view class='case'>
+    <view class='Title'>案例作品</view>
+    <!-- 案例作品开始 -->
+    <view class="more_list">
+      <!--  一  -->
+      <view class='moreInfo' wx:for='{{workList}}' wx:key='' bindtap='caseDetalis' id="{{item.id}}">
+        <view class='imgbox'>
+          <image src="{{item.imgurls}}" lazy-load="{{imgLoad}}" mode="widthFix"></image>
+        </view>
+        <view class='text heis'>{{item.title}}</view>
+      </view>
+    </view>
+    <!-- 案例作品结束 -->
+    <view class='See' bind:tap='moreSee'>查看更多</view>
+  </view>
+  <view class='Journalism'>
+    <view class='Title'>新闻中心</view>
+    <view class='newHome' wx:for='{{Journalism}}' wx:key='' id='{{item.id}}' bindtap='JournalismDeatlis'>
+      <view class='myNew'>
+        <view class='newImage' style='background-image: url("{{item.imgurls}}");background-size:100%;'></view>
+        <view class='newDetails'>
+          <view class='newTitle'>{{item.title}}</view>
+          <view class='decs'>{{item.description}}</view>
+          <view class='time'>{{item.addtime}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='See' bind:tap='JournalismSee'>查看更多</view>
+  </view>
+  <view class='contact'>
+    <view class='Title' style="margin-bottom:20rpx;">联系我们</view>
+    <view class='Amapr'>
+     <map id="map" longitude="117.1051" latitude="39.06953" scale="14" controls="{{controls}}" markers="{{markers}}"  style="width: 100%;"></map>
+    </view>
+    <view class='newContact'>
+      <view class='contactTitle'>天津凯拓软件</view>
+      <view class='contacts'>
+        <view>{{address}}</view>
+      </view>
+      <view class='contacts'>
+        <view>{{email}}</view>
+      </view>
+      <view class='contacts' bind:tap='phoneNumber'>
+        <view>{{tel}}</view>
+      </view>
+    </view>
+  </view>
+</view>

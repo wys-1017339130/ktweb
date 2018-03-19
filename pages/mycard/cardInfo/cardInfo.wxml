@@ -1,0 +1,48 @@
+<!--pages/cardInfo/cardInfo.wxml-->
+<view class='Cantop'>
+  <image src='../../images/logo.png'></image>
+</view>
+<view style='padding:0.5rem; background: #F4F5F7;'>
+  <form bindsubmit="register">
+    <view class="section content_box">
+    <!-- 有id则有名片 反之没有 -->
+      <image src='{{id != "" ? head  : userInfo.headimgurl}}' background-size="cover" wx:if="{{avatarUrl}}"></image>
+       <!-- <image src='{{head}}' background-size="cover" wx:if="{{!avatarUrl}}"></image>  -->
+      <view class='input_box' style='border-top:1px solid #ccc;'>
+        <input type='text' placeholder="请输入名字" name="name" value="{{cardInfo.username}}"></input>
+      </view>
+      <view class='input_box input_flexbox'>
+        <!-- <input type='number' placeholder="请输入手机号" bindblur="blurTel" name="tel" maxlength="11" value="{{cardInfo.tel}}"></input> -->
+				<input type='number' placeholder="请输入手机号" bindinput="blurTel" name="tel" maxlength="11"></input>
+        <button type='{{btntype}}' bindtap="get_Sms" disabled="{{disabled}}" hover-class="button-hover">{{VerifyCode}}</button>
+      </view>
+      <view class='input_box' style='border:none'>
+        <input type='number' placeholder="请输入验证码" name="code"></input>
+      </view>
+    </view>
+    <view class="content_box">
+      <view class='input_box'>
+        <input type='text' placeholder="请输入公司名称" name="corporate_name" value="{{cardInfo.corporate_name}}"></input>
+      </view>
+      <view class='input_box'>
+        <input type='text' placeholder="请输入职务" name="post" value="{{cardInfo.post}}"></input>
+      </view>
+      <view class='input_box' style='border:none'>
+        <input type='text' placeholder="请输入邮箱" name="email" value="{{cardInfo.email}}"></input>
+      </view>
+    </view>
+    <view class="content_box">
+      <view style='font-size:30rpx'>
+        <textarea placeholder='来一段简单介绍,让微信好友更多的了解你.' name="desc" value="{{cardInfo.desc}}" style='padding:0.5rem;min-height:3rem;'></textarea>
+      </view>
+    </view>
+    <view class="imglist_box" wx:if="{{!avatarUrl}}">
+      <view class="img_box"  wx:for="{{tempFilePaths}}">
+        <image src="{{item}}" mode="scaleToFill" style="width:150rpx;height:200rpx;margin-top:20rpx;"></image>
+        <!-- <text  class="del_box">X</text> -->
+      </view>
+    </view>
+    <view class='upImgbox' bindtap='getPicker' wx:if="{{tempFilePaths.length<=0}}">+</view>
+    <button formType="submit" class='btn_box'>提交保存</button>
+  </form>
+</view>

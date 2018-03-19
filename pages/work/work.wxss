@@ -1,0 +1,226 @@
+.Cantop{
+   width: 100%;
+    height: 45px;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.Cantop>image{
+  width: 96px;
+  height: 30px;
+}
+/* tab效果 */
+/* tabdemo.wxss */
+.navbar {
+  background-color: RGB(247, 247, 247);
+  width: 100%
+}
+.nav-1{  
+  flex: none;  
+  display: flex;   
+  background: #fff;  
+  background-color: RGB(247, 247, 247);
+  height: 80rpx;
+}
+.nav-1 .wrapBar {
+  display: flex;
+}
+.nav-1 .item{  
+  position: relative;   
+  text-align: center;  
+  font-size: 30rpx;
+  line-height: 80rpx;  
+  color: gray;
+  display: inline-block;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}  
+.nav-1 .item.active{  
+  color: black;
+}  
+.nav-1 .item.active:after{  
+  content: "";  
+  display: block; 
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0; 
+  height: 4rpx;  
+  background: black;  
+}  
+
+.more_list{
+  padding:20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.moreInfo{
+  width:330rpx;
+  height:400rpx;
+  margin-top:20rpx;
+}
+
+.imgbox{
+  width:100%;
+	min-height:350rpx;
+  border-top-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+}
+
+.imgbox image{
+	width:100%;
+	height:350rpx;
+}
+
+.nav-1-left {
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 0 0 100%;
+}
+
+swiper-item scroll-view {
+  display: inline;
+}
+swiper.itemContainer{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scrollSwiper{
+  display: -webkit-box;
+  font-size: 12px;
+  height: 50px;
+  color: #B5B5B5;
+  -webkit-box-align: center;
+  background-color: #F7F7F7;
+  overflow-x: auto;
+  -webkit-box-pack: center;
+}
+
+.scrollSwiper::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollSwiper>view{
+  width: 80px;
+  height: 46px;
+  line-height: 46px;
+  display: -webkit-box;
+   -webkit-box-align: center;
+  text-align: center;
+   -webkit-box-pack: center;
+}
+
+.nav{
+  color: #212121;
+  font-size: 14px;
+   height: 46px;
+  line-height: 46px;
+  border-bottom: 2px solid #8C8C8C;
+}
+
+.myList {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #0f0;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.Offspring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.Offspring>view {
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 16px;
+}
+
+.heis{
+  height: 30px;
+  font-size: 13px !important;
+  line-height: 30px;
+}
+
+.scrollSwiper +view{
+   display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 10px;
+}
+
+.seex{
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  height: 30px;
+}
+
+.seex>view:nth-child(2){
+  width: 20%;
+  color: #C7C7C7;
+  font-size: 12px;
+  text-align: center;
+}
+
+.seex>view:last-child,.seex>view:first-child{
+  height: 1px;
+  background-color: #DEDEDE;
+  -webkit-box-flex: 1;
+  margin-left: 3%;
+  margin-right: 3%;
+}

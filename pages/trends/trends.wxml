@@ -1,0 +1,30 @@
+<view>
+    <view class='Cantop'>
+    <image src='../images/logo.png'></image>
+    </view>
+    <swiper indicator-dots='true' indicator-color='rgba(255,255,255,1)' indicator-active-color='#505655' interval='{{interval}}' duration="{{duration}}" circular='true' autoplay="{{autoplay}}">
+       <block wx:for="{{imgUrls}}">
+            <swiper-item style="width:200px;">
+                <image src="{{item}}" class="slide-image" style='width:100%'  mode="widthFix"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class='myNav'>
+        <view wx:for="{{nav}}" wx:for-index='index' data-num='{{index}}' bind:tap='navbar'>
+            <view class='{{index==keyinng?"navs":" "}}'>{{item}}</view>
+        </view>
+    </view>
+    <view class='Journalism'>
+        <view class='newHome' wx:for="{{get_Trends}}" wx:key='' id='{{item.id}}' bindtap='JournalismDeatlis'>
+            <view class='myNew'>
+                <view class='newImage' style='background-image: url("{{item.imgurls}}");background-size:100%;'></view>
+                <view class='newDetails'>
+                    <view class='newTitle'>{{item.title}}</view>
+                    <view class='decs'>{{item.description}}</view>
+                    <view class='time'>{{item.addtime}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='seex' wx:if='{{pagenum==1}}'><view></view><view>没有更多了</view><view></view></view>
+</view>
